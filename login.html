@@ -3,71 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/admin/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all.min.css">
     <title>Login</title>
-
-    <style>
-        .login {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            height: 80%;
-        }
-
-        .box-group-field input {
-            font-size: 15px;
-            margin:auto auto;
-            padding: 6px;
-        }
-
-        .btn {
-            height: 30px;
-            width: 100%;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            margin: 5px 0px;
-        }
-
-        @media screen and (min-width: 900px) {
-            .login {
-                width: 400px;
-                height: 500px;
-            }
-
-            .btn {
-                width: 20%;
-            }
-        }
-
-    </style>
 </head>
 <body>
-   
     <main class="login-wrapper">
-        <section class="login">
-            <div class="box">
-                <div class="box-header">
-                    <h3 class="box-title"> Login </h3>
+        <div class="login-form">
+            <div class="login">
+                <div class="login-title">
+                    <h2>Appizz</h2>
                 </div>
                 <form>
-                    <div class="box-body">
-                        <div class="box-group-field">
-                            <label for="email">E-mail</label>
-                            <input id="email" type="text">
-                        </div>
-                        <div class="box-group-field">
-                            <label for="password">Password</label>
-                            <input id="password" type="password">
-                        </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                     </div>
-                    <div class="box-footer">
-                        <a href="index.html" class="btn color-blue" type="submit">Submit</a>
+                    <div class="form-group">
+                      <label for="senha">Senha</label>
+                      <input type="password" class="form-control" id="senha">
                     </div>
-                </form>
+                    <button type="submit" class="btn btn-danger">Login</button>
+                  </form>
             </div>
-        </section>
+        </div>
+        <div class="login-banner">
+            <img src="./images/banner-login.jpg" alt="">
+        </div>
     </main>
+
+    <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./plugins/fontawesome/js/all.min.js"></script>
 </body>
 </html>
