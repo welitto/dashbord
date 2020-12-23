@@ -84,6 +84,7 @@ main {
     display: flex !important;
     flex-direction: row;
     height: 100%;
+     /* tela fixa */
 }
 
 /* asidebar */
@@ -189,6 +190,8 @@ main {
     box-sizing: border-box;
 }
 
+/** conteudo **/
+
 .content-wrapper {
     height: 100%;
     width: calc(100% - 300px);
@@ -204,8 +207,10 @@ main {
     width: 100%;
     height: 100%;
     padding: 30px;
+    overflow-y: auto;
 }
 
+/** footer **/
 .footer-main { 
     height: 50px;
     width: 100%;
@@ -233,7 +238,6 @@ main {
     text-decoration: none;
     color: #ffdb58;
 }
-
 
 .footer-main div {
     font-size: 15px;
