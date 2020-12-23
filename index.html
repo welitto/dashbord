@@ -4,102 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet"> 
     <title>Dashboard</title>
 </head>
 <body>
-    <!-- inicio do header -->
-    <header class="header-main">
-        <a class="header-logo" href="index.html">
-            <span>
-                <strong>Dashbord</strong> Simple 
-            </span>
-        </a>
-        <nav class="header-navbar">
-            <a class="sidebar-toggle" href="#">
-                <span class="sr-only"> Toggle navigation </span>
-            </a>
-            <ul class="header-navbar-menu">
-                <li class="header-navbar-item"> 
-                    <a href="login.html"> Sair </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- fim do header -->
 
-    <!-- inicio do aside -->
-    <aside class="sidebar-main" style="width: 0px;">
-        <section class="sidebar-section">
-            <ul class="sidebar-menu">
-                <li class="sidebar-menu-item">
-                    <a href="#dashboard">
-                        <i class="fas fa-tachometer-alt"></i> Dashboard 
-                    </a>
-                </li>
-                <li class="sidebar-menu-item">
-                    <a href="#forms">
-                        <i class="fas fa-edit"></i> Forms
-                    </a>
-                </li>
-                <li class="sidebar-menu-item">
-                    <a href="#buttons">
-                        <i class="fas fa-mouse"></i>Buttons
-                    </a>
-                </li>
-                <li class="sidebar-menu-item" id="pages">
-                    <a class="accordion">
-                        <i class="fas fa-file-code"></i>Pages
-                    </a>
-                    <ul class="sidebar-submenu">
-                        <li>
-                            <a href="#login">
-                                <i class="far fa-circle nav-icon"></i>Login
+    <div class="flex-wrapper">
+        <header class="header-main">
+            <a class="header-logo" href="index.html">
+                <span>
+                    <strong>Ap</strong>pizz 
+                </span>
+            </a>
+            <nav class="header-navbar">
+                <a class="sidebar-toggle" href="#">
+                    <span class="sr-only"> Toggle navigation </span>
+                </a>
+                <ul class="header-navbar-menu">
+                    <li class="header-navbar-item"> 
+                        <a href="login.html"> 
+                            <i class="fas fa-sign-out-alt"></i>  Sair 
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <aside class="sidebar-main">
+                <section class="sidebar-section">
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu-item">
+                            <a href="#dashboard">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard 
                             </a>
                         </li>
-                        <li>
-                            <a href="#notfound">
-                                <i class="far fa-circle nav-icon"></i>Not Faund
+                        <li class="sidebar-menu-item">
+                            <a href="#forms">
+                                <i class="fas fa-edit"></i>Forms
                             </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#buttons">
+                                <i class="fas fa-mouse"></i>Buttons
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#" class="accordion-btn">
+                                <i class="fas fa-file-code"></i>Pages
+                                <span class="fas fa-caret-down"></span>
+                            </a>
+                            <ul class="sidebar-submenu pages-show">
+                                <li>
+                                    <a href="#login">
+                                        <i class="far fa-circle nav-icon"></i> Login
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#notfound">
+                                        <i class="far fa-circle nav-icon"></i> Not Faund
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#" class="accordion-btn">
+                                <i class="fas fa-file-code"></i>Test
+                                <span class="fas fa-caret-down"></span>
+                            </a>
+                            <ul class="sidebar-submenu test-show">
+                                <li>
+                                    <a href="#login">
+                                        <i class="far fa-circle nav-icon"></i> Login
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#notfound">
+                                        <i class="far fa-circle nav-icon"></i> Not Faund
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                </li>
-            </ul>
-        </section>
-    </aside>
-    <!-- fim do aside -->
+                </section>
+            </aside>
 
-    <div class="content-wrapper">
-        <main class="content">
-            <section>
-                <div class="box">
-                    <div class="box-header">
-                        <h3 class="box-title"> Formulario </h3>
-                    </div>
-                    <form>
-                        <div class="box-body">
-                            <div class="box-group-field">
-                                <label for="email">E-mail</label>
-                                <input id="email" type="text">
-                            </div>
-                            <div class="box-group-field">
-                                <label for="password">Password</label>
-                                <input id="password" type="text">
-                            </div>
-                        </div>
-                        <div class="box-footer">
-                            <button class="btn color-blue" type="submit">Submit</button>
-                        </div>
-                    </form>
+            <div class="content-wrapper">
+                <div class="content">
+                    conteudo
                 </div>
-            </section>
+            </div>
         </main>
     </div>
 
-    <!-- <footer class="footer-main"></footer> -->
-
-
+    <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="./plugins/fontawesome/js/all.min.js"></script> -->
     <script src="./js/scripts.js"></script>
 </body>
 </html>
