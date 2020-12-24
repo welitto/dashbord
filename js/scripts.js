@@ -1,21 +1,13 @@
-// var toggle = document.getElementsByClassName("sidebar-toggle");
-// var sidebar = document.getElementsByClassName("sidebar-main");
-// var contentwrapper = document.getElementsByClassName("content-wrapper");
-// var sidebarmenu = document.getElementsByClassName("sidebar-menu");
+var toggle = document.getElementsByClassName("sidebar-toggle");
+var sidebar = document.getElementsByClassName("sidebar-main");
+var contentwrapper = document.getElementsByClassName("content-wrapper");
+var footer = document.getElementsByClassName("footer-main");
 
-// toggle[0].addEventListener("click", function () {
-//     if(sidebar[0].style.width === "" || sidebar[0].style.width === "0px"){
-
-//         sidebar[0].style.width = "230px";
-//         contentwrapper[0].style.marginLeft = "230px";
-//         sidebarmenu[0].style.display = "block";
-//     }
-//     else {
-//         sidebar[0].style.width = "0px";
-//         contentwrapper[0].style.marginLeft = "0px";
-//         sidebarmenu[0].style.display = "none";
-//     }
-// });
+toggle[0].addEventListener("click", function () {
+    sidebar[0].classList.toggle("sidebar-margin-left-0");
+    contentwrapper[0].classList.toggle("content-wrapper-width-calc");
+    footer[0].classList.toggle("footer-main-none");
+});
 
 
 
