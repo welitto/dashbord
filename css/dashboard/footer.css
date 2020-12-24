@@ -1,0 +1,32 @@
+/** footer **/
+.footer-main { 
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid #CCC;
+    background-color: #fdfdfd;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer-main strong {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-main strong a {
+    text-decoration: none;
+    color: #dc3545;
+}
+
+.footer-main strong a:hover {
+    text-decoration: none;
+    color: #ffdb58;
+}
+
+.footer-main div {
+    font-size: 15px;
+}
