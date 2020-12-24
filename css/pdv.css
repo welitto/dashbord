@@ -1,0 +1,49 @@
+.pdv-form-full {
+    margin-left: -300px !important;
+}
+
+.pdv-content-full {
+    width: 100%;
+}
+
+.pdv-main {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pdv-form, .pdv-product {
+  height: 100%;
+  width: 49%;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+}
+
+/* .pdv-form {
+
+}
+
+.pdv-product {
+   
+} */
+
+@media screen and (max-width: 800px ){
+    .pdv-main {
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pdv-form, .pdv-product {
+        height: 49%;
+        width: 100%;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: white;
+      }
+}

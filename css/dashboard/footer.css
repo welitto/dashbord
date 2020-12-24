@@ -30,3 +30,18 @@
 .footer-main div {
     font-size: 15px;
 }
+
+
+@media screen and (max-width: 650px ) {
+    .footer-main { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-main-none {
+        display: none;
+    }
+
+}

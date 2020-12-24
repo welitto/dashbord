@@ -100,3 +100,16 @@
     padding-left: 40px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 800px ){
+
+    .sidebar-main {
+        margin-left: -300px;
+        transition: linear 0.9s;
+    }
+
+    .sidebar-responsive {
+        margin-left: 0;
+    }
+
+}
